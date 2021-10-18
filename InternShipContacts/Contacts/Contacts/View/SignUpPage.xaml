@@ -1,0 +1,39 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:Contacts.Services.Converters"
+             x:Class="Contacts.View.SignUpPage"
+             Title="Users Sign In">
+    <ContentPage.Resources>
+        <local:MultiTriggerConverterSignUpPage x:Key="dataHasBeenEntered" />
+    </ContentPage.Resources>
+    <ContentPage.Content>
+        <StackLayout>
+            <Entry x:Name="Login" Placeholder="Login" Text="" Margin="45,120,45,0"/>
+            <Entry x:Name="Password" Placeholder="Password" Text="" IsPassword ="True" Margin="45,0,45,0"/>
+            <Entry x:Name="ConfirmPassword" Placeholder="Confirm Password" Text="" IsPassword ="True" Margin="45,0,45,0"/>
+            <Button x:Name="button" Text = "Sing In" FontSize="Default" Margin="45,140,45,0" BackgroundColor="BurlyWood" IsEnabled="false" 
+    HorizontalOptions="Fill">
+                <Button.Triggers>
+                    <MultiTrigger TargetType="Button">
+                        <MultiTrigger.Conditions>
+                            <BindingCondition Binding="{Binding Source={x:Reference Login},
+                  Path=Text.Length,
+                  Converter={StaticResource dataHasBeenEntered}}"
+                Value="true" />
+                            <BindingCondition Binding="{Binding Source={x:Reference Password},
+                  Path=Text.Length,
+                  Converter={StaticResource dataHasBeenEntered}}"
+                Value="true" />
+                            <BindingCondition Binding="{Binding Source={x:Reference ConfirmPassword},
+                  Path=Text.Length,
+                  Converter={StaticResource dataHasBeenEntered}}"
+                Value="true" />
+                        </MultiTrigger.Conditions>
+                        <Setter Property="IsEnabled" Value="true" />
+                    </MultiTrigger>
+                </Button.Triggers>
+            </Button>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
