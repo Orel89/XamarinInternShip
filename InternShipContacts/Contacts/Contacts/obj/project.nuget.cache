@@ -1,9 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "iZizrdg1520OeNnq89OtVqJ1qAn8f75Je9n2a1MG9BfKTLcLUWgj5MwQKL9d4MGaRwi2dibAVK5GdO8Qqhje9g==",
+  "dgSpecHash": "IJR85iw9wcS0Thi3iB4lat5aJ8mr5/9iKUyCbTLD5azzSWv4YA5OQ9NIuzMPGaDd4zJ5aInsT+WYs2kPdoGzGw==",
   "success": true,
-  "projectFilePath": "D:\\XamarinProject\\InternShipContacts\\Contacts\\Contacts\\Contacts.csproj",
+  "projectFilePath": "C:\\Users\\oleks\\OneDrive\\Pulpit\\InternShipContacts\\Contacts\\Contacts\\Contacts.csproj",
   "expectedPackageFiles": [
+    "C:\\Users\\oleks\\.nuget\\packages\\acr.userdialogs\\7.2.0.534\\acr.userdialogs.7.2.0.534.nupkg.sha512",
     "C:\\Users\\oleks\\.nuget\\packages\\microsoft.netcore.platforms\\1.1.0\\microsoft.netcore.platforms.1.1.0.nupkg.sha512",
     "C:\\Users\\oleks\\.nuget\\packages\\netstandard.library\\2.0.3\\netstandard.library.2.0.3.nupkg.sha512",
     "C:\\Users\\oleks\\.nuget\\packages\\prism.core\\8.1.97\\prism.core.8.1.97.nupkg.sha512",

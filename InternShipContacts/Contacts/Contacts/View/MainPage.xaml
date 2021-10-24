@@ -5,11 +5,11 @@
              x:Class="Contacts.View.MainPage"
              Title="Users SignIn">
     <ContentPage.Resources>
-        <local:MultiTriggerConverterMainPage x:Key="dataHasBeenEntered" />
+        <local:MultiTriggerConverterMainPage x:Key="dataHasBeenEntered" /> 
     </ContentPage.Resources>
     <StackLayout>
-        <Entry x:Name="loginEntry" Placeholder="Login" Text="" Margin="45,120,45,0"/>
-        <Entry x:Name="passwordEntry" Placeholder="Password" Text="" IsPassword ="True" Margin="45,0,45,0"/>
+        <Entry x:Name="loginEntry" Placeholder="Login" Text="{Binding Login}" Margin="45,120,45,0"/>
+        <Entry x:Name="passwordEntry" Placeholder="Password" Text="{Binding Password}" IsPassword ="True" Margin="45,0,45,0"/>
         <StackLayout>
             <Button x:Name="ButtonSignIn" Text="Sing In" FontSize="Default" Margin="45,180,45,0" BackgroundColor="BurlyWood" 
     HorizontalOptions="Fill" Command="{Binding NavigateCommandToMailListPage}" IsEnabled="false">

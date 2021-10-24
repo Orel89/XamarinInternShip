@@ -1,4 +1,6 @@
-﻿using Contacts.Services.Repository;
+﻿using Contacts.Services.AuthenticationService;
+using Contacts.Services.Contacts;
+using Contacts.Services.Repository;
 using Contacts.Services.Settings;
 using Contacts.View;
 using Contacts.ViewModel;
@@ -15,14 +17,18 @@ namespace Contacts
         protected override void RegisterTypes(IContainerRegistry containerRegistry)
         {
             //Services
-            containerRegistry.RegisterInstance<ISettingsManager>(Container.Resolve<SettingsManager>());
             containerRegistry.RegisterInstance<IRepository>(Container.Resolve<Repository>());
+            containerRegistry.RegisterInstance<ISettingsManager>(Container.Resolve<SettingsManager>());
+            containerRegistry.RegisterInstance<IAuthentication>(Container.Resolve<AuthenticationService>());
+            containerRegistry.RegisterInstance<IContactManager>(Container.Resolve<ContactManager>());
 
             //Navigation
             containerRegistry.RegisterForNavigation<NavigationPage>();
             containerRegistry.RegisterForNavigation<MainPage, MainPageViewModel>();
+            containerRegistry.RegisterForNavigation<SettingPage, SettingPageViewModel>();
             containerRegistry.RegisterForNavigation<SignUpPage, SignUpPageViewModel>();
             containerRegistry.RegisterForNavigation<MainListPage, MainListPageViewModel>();
+            containerRegistry.RegisterForNavigation<AddEditProfilePage, AddEditProfilePageViewModel>();
         }
 
         protected override async void OnInitialized()

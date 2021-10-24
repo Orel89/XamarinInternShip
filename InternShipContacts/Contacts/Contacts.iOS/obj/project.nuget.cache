@@ -1,9 +1,11 @@
 {
   "version": 2,
-  "dgSpecHash": "7F3re8j7ugcCdfXgzE+24mrmsYR4sHP32oLKhTkUWOsjV/FVq0lHrh6QNe/i24MiWelybDrlQcPlTpsiqhygpQ==",
+  "dgSpecHash": "UD2OIars0GDHyMD/WbBAI8nshFWRCc9XHWIsYh8z9+h3BgpJGwgn1SVzPieDgt39YsY9/1xBgaYCFooIhzhv6Q==",
   "success": true,
-  "projectFilePath": "D:\\XamarinProject\\InternShipContacts\\Contacts\\Contacts.iOS\\Contacts.iOS.csproj",
+  "projectFilePath": "C:\\Users\\oleks\\OneDrive\\Pulpit\\InternShipContacts\\Contacts\\Contacts.iOS\\Contacts.iOS.csproj",
   "expectedPackageFiles": [
+    "C:\\Users\\oleks\\.nuget\\packages\\acr.userdialogs\\7.2.0.534\\acr.userdialogs.7.2.0.534.nupkg.sha512",
+    "C:\\Users\\oleks\\.nuget\\packages\\btprogresshud\\1.3.4\\btprogresshud.1.3.4.nupkg.sha512",
     "C:\\Users\\oleks\\.nuget\\packages\\prism.core\\8.1.97\\prism.core.8.1.97.nupkg.sha512",
     "C:\\Users\\oleks\\.nuget\\packages\\prism.forms\\8.1.97\\prism.forms.8.1.97.nupkg.sha512",
     "C:\\Users\\oleks\\.nuget\\packages\\prism.unity.forms\\8.1.97\\prism.unity.forms.8.1.97.nupkg.sha512",

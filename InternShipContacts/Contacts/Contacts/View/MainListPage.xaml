@@ -1,52 +1,89 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="Contacts.View.MainListPage"
-             Title="Main List">
-    <ContentPage.Content> 
-        
-        <Grid RowDefinitions="70, *">
-            
-            <Grid Grid.Row="0"
-                  ColumnDefinitions="0.3*, 0.3*, 0.3*">
-                
-                <Button Text="Add"
-                        Command="{Binding AddButtonTapCommand}"
-                        Grid.Column="0"/>
-
-                <Entry Placeholder="First Name"
-                       Grid.Column="1"
-                       VerticalOptions="Center"
-                       Text="{Binding FirstName}"/>
-
-                <Entry Placeholder="Last Name"
-                       Grid.Column="2"
-                       VerticalOptions="Center"
-                       Text="{Binding LastName}"/>
-                
+             x:Class="Contacts.View.MainListPage">
+    <ContentPage.Content>
+        <Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="*" />
+            </Grid.RowDefinitions>
+            <Grid RowDefinitions="56, *"
+                  >
+                <Grid Grid.Row="0" BackgroundColor="Green"
+                       ColumnDefinitions="0.7*,0.3*,0.3*"
+                      ColumnSpacing="0">
+                    <Label Text="Contacts" 
+                    BackgroundColor="Transparent"
+                    FontSize="Title"
+                    Margin="16,0,0,0"
+                    Grid.Column="0"
+                    VerticalOptions="Center"/>
+                    
+                    <ImageButton Source ="logout.png"
+                     BackgroundColor="Transparent"
+                     Margin="0,0,0,0"  
+                     Padding="0,0,0,0"            
+                     Grid.Column="1"
+                     VerticalOptions="Center"
+                     HeightRequest="35"
+                     Command="{Binding OnLogOutButtonTap}"/>
+                    
+                    <ImageButton Source ="settings.png"
+                     BackgroundColor="Transparent"
+                     Margin="0,0,0,0"
+                     Padding="0,0,0,0"           
+                     Grid.Column="2"
+                     VerticalOptions="Center"
+                     HeightRequest="25"
+                     Command="{Binding OnSettingsButtonTap}"          
+                     />
+                </Grid>
+                <ListView Grid.Row="1"
+                  HasUnevenRows="True"
+                  ItemsSource="{Binding ContactList}">
+                    <ListView.ItemTemplate>
+                        <DataTemplate>
+                            <ViewCell>
+                                <ViewCell.ContextActions >
+                                    <MenuItem Text="edit"
+                                              Command= "{Binding EditCommand}"
+                                              CommandParameter="{Binding}"/>
+                                    <MenuItem Text="delete"
+                                              Command="{Binding DeleteCommand }"
+                                              CommandParameter="{Binding}" />
+                                </ViewCell.ContextActions>
+                                <ViewCell.View>
+                                    <Grid ColumnDefinitions="0.3*,0.7*"  >
+                                        <StackLayout Grid.Column="1">
+                                            <Label Text="{Binding Id}"/>
+                                            <Label Text="{Binding NickName}"/>
+                                            <Label Text="{Binding Name}"/>
+                                            <Label Text="{Binding Description}"/>
+                                            <Label Text="{Binding CreationTime}"/>
+                                        </StackLayout>
+                                        <Frame Grid.Column="0" >
+                                            <Image Source="{Binding PictureUrl}"
+                                                   Aspect="AspectFit"
+                                                   HeightRequest="90"/>
+                                        </Frame>
+                                    </Grid>
+                                </ViewCell.View>
+                            </ViewCell>
+                        </DataTemplate>
+                    </ListView.ItemTemplate>
+                </ListView>
             </Grid>
-
-            <ListView Grid.Row="1"
-                      ItemsSource="{Binding ProfileList}"
-                      HasUnevenRows="True">
-                <ListView.ItemTemplate>
-                    <DataTemplate>
-                        <ViewCell>
-                            <ViewCell.View>
-                                <StackLayout>
-                                    <Label Text="{Binding FirstName}"/>
-
-                                    <Label Text="{Binding LastName}"/>
-
-                                    <Label Text="{Binding CreationTime}"/>
-                                </StackLayout>
-                            </ViewCell.View>
-                        </ViewCell>
-                    </DataTemplate>
-                </ListView.ItemTemplate>
-            </ListView>
+            <ImageButton Source ="plusButton.png"
+                         Command="{Binding OnAddButtonTap}"
+                         BackgroundColor="DarkRed" 
+                         CornerRadius="60"
+                         WidthRequest="70" 
+                         HeightRequest="70"
+                         Margin="0,0,30,42"
+                         VerticalOptions="End"
+                         HorizontalOptions="End"
+                        />
         </Grid>
-        
     </ContentPage.Content>
-    
+
 </ContentPage>

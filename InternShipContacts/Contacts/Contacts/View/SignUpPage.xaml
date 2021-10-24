@@ -9,11 +9,11 @@
     </ContentPage.Resources>
     <ContentPage.Content>
         <StackLayout>
-            <Entry x:Name="Login" Placeholder="Login" Text="" Margin="45,120,45,0"/>
-            <Entry x:Name="Password" Placeholder="Password" Text="" IsPassword ="True" Margin="45,0,45,0"/>
-            <Entry x:Name="ConfirmPassword" Placeholder="Confirm Password" Text="" IsPassword ="True" Margin="45,0,45,0"/>
+            <Entry x:Name="Login" Placeholder="Login" Text="{Binding Login}" Margin="45,120,45,0"/>
+            <Entry x:Name="Password" Placeholder="Password" Text="{Binding Password}" IsPassword ="True" Margin="45,0,45,0"/>
+            <Entry x:Name="ConfirmPassword" Placeholder="Confirm Password" Text="{Binding ConfirmPassword}" IsPassword ="True" Margin="45,0,45,0"/>
             <Button x:Name="button" Text = "Sing In" FontSize="Default" Margin="45,140,45,0" BackgroundColor="BurlyWood" IsEnabled="false" 
-    HorizontalOptions="Fill">
+    HorizontalOptions="Fill" Command="{Binding NavigateCommandToMainPage}">
                 <Button.Triggers>
                     <MultiTrigger TargetType="Button">
                         <MultiTrigger.Conditions>

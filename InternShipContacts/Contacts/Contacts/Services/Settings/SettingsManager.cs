@@ -7,10 +7,10 @@ namespace Contacts.Services.Settings
 {
     public class SettingsManager : ISettingsManager
     {
-        public int Count 
-        {    
-            get => Preferences.Get(nameof(Count),5); 
-            set => Preferences.Set(nameof(Count), value);
+        public string Login
+        {
+            get => Preferences.Get(nameof(Login), null);
+            set => Preferences.Set(nameof(Login), value);
         }
     }
 }

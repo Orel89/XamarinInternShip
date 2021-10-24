@@ -1,0 +1,83 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:Contacts.Services.Converters" 
+             x:Class="Contacts.View.AddEditProfilePage"
+             Title="Add Profile">
+    <ContentPage.Resources>
+        <local:MultiTriggerConverterEditAddPage x:Key="dataHasBeenEntered" /> 
+    </ContentPage.Resources>
+    <ContentPage.Content>
+        <Grid RowDefinitions="0.05*,0.3*,0.09*,0.09*,0.32*" 
+          RowSpacing="10">
+            <Grid Grid.Row="0"
+                     BackgroundColor="Blue">
+                <ImageButton Grid.Column="0" 
+                         Source="arrowLeft.png" 
+                         Command="{Binding OnArrowTapButton}"
+                         BackgroundColor="Transparent"
+                         HorizontalOptions="Start" Margin="20,0,0,0"
+                         HeightRequest="40" 
+                         WidthRequest="25">
+
+                </ImageButton>
+                <Label Grid.Column="1" 
+                   Text="Add profile" FontSize="Title"
+                   HorizontalOptions="Center"
+                   VerticalOptions="Center"/>
+                <ImageButton Grid.Column="2" 
+                         Source="save.png"
+                         Command="{Binding OnSaveButton}"
+                         BackgroundColor="Transparent"
+                         HeightRequest="30"
+                         WidthRequest="30" 
+                         Margin="0,0,25,0"
+                         HorizontalOptions="End">
+                    <ImageButton.Triggers>
+                        <DataTrigger TargetType="ImageButton"
+                     Binding="{Binding Source={x:Reference nickname},
+                                       Path=Text.Length,
+                                       Converter={StaticResource dataHasBeenEntered}}"
+                     Value="true">
+                            <Setter Property="Source" Value="SaveB" />
+                        </DataTrigger>
+                        <DataTrigger TargetType="ImageButton"
+                     Binding="{Binding Source={x:Reference name},
+                                       Path=Text.Length,
+                                       Converter={StaticResource dataHasBeenEntered}}"
+                     Value="true">
+                            <Setter Property="Source" Value="SaveB" />
+                        </DataTrigger>
+                    </ImageButton.Triggers>
+                </ImageButton>
+            </Grid>
+            <Image Grid.Row="1"
+               Source = "{Binding PictureUrl}"
+               BackgroundColor="Transparent"
+               >
+                <Image.GestureRecognizers>
+                    <TapGestureRecognizer Command="{Binding OnTapImage}"/>
+                </Image.GestureRecognizers>
+            </Image>
+            <Entry Grid.Row="2"
+               x:Name="nickname"
+               Placeholder="NickName"
+               Text="{Binding NickName}"
+                Margin="40,0,40,10"
+               VerticalOptions="End"  />
+            <Entry Grid.Row="3"
+               x:Name="name"
+               Placeholder="Name" 
+               Text="{Binding Name }"
+                Margin="40,0,40,10"
+               VerticalOptions="End" />
+            <Editor Grid.Row="4" 
+                Placeholder="Description"
+                Text="{Binding Description}"
+                BackgroundColor="Gray"
+                Margin="40,30,40,30"
+                 />
+
+        </Grid>
+    </ContentPage.Content>
+</ContentPage>
