@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "IJR85iw9wcS0Thi3iB4lat5aJ8mr5/9iKUyCbTLD5azzSWv4YA5OQ9NIuzMPGaDd4zJ5aInsT+WYs2kPdoGzGw==",
+  "dgSpecHash": "xivuJJeuKQCr3CEVDIyHccMbN6aBZp4HSBinH5gKnM3pmQ4vdLC0yGSHQXaqyzJ3iyZdOmvLbGRZVyf5jUURBQ==",
   "success": true,
-  "projectFilePath": "C:\\Users\\oleks\\OneDrive\\Pulpit\\InternShipContacts\\Contacts\\Contacts\\Contacts.csproj",
+  "projectFilePath": "D:\\XamarinProject\\InternShipContacts\\Contacts\\Contacts\\Contacts.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\oleks\\.nuget\\packages\\acr.userdialogs\\7.2.0.534\\acr.userdialogs.7.2.0.534.nupkg.sha512",
     "C:\\Users\\oleks\\.nuget\\packages\\microsoft.netcore.platforms\\1.1.0\\microsoft.netcore.platforms.1.1.0.nupkg.sha512",

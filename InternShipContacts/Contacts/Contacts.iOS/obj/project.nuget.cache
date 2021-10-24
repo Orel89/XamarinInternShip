@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "UD2OIars0GDHyMD/WbBAI8nshFWRCc9XHWIsYh8z9+h3BgpJGwgn1SVzPieDgt39YsY9/1xBgaYCFooIhzhv6Q==",
+  "dgSpecHash": "wM4Zf6+IDSSaUTO+WyA8lX5oGK/p+5fftmnBocVlPktDxA00+EVit08T25VoulkgICqNrZ/uTVv41G9bfNixIQ==",
   "success": true,
-  "projectFilePath": "C:\\Users\\oleks\\OneDrive\\Pulpit\\InternShipContacts\\Contacts\\Contacts.iOS\\Contacts.iOS.csproj",
+  "projectFilePath": "D:\\XamarinProject\\InternShipContacts\\Contacts\\Contacts.iOS\\Contacts.iOS.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\oleks\\.nuget\\packages\\acr.userdialogs\\7.2.0.534\\acr.userdialogs.7.2.0.534.nupkg.sha512",
     "C:\\Users\\oleks\\.nuget\\packages\\btprogresshud\\1.3.4\\btprogresshud.1.3.4.nupkg.sha512",

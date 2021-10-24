@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "Jkg81N/1CQb5SIaVIARxoALC/t7AFdRQ4hckHFFdKlxbHvVKCVn3ak0J6+WK2OfJf8d5XQ7a2lkCyri3SrdNdw==",
+  "dgSpecHash": "fKGHPA/nL4XSPnO260tri8M6lNvFsiDAs0lgTIqV/QSMR9pTeIeu6RaZtKjW1tWf4ugAP4cz3fcFOmo7XzkXpw==",
   "success": true,
-  "projectFilePath": "C:\\Users\\oleks\\OneDrive\\Pulpit\\InternShipContacts\\Contacts\\Contacts.Android\\Contacts.Android.csproj",
+  "projectFilePath": "D:\\XamarinProject\\InternShipContacts\\Contacts\\Contacts.Android\\Contacts.Android.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\oleks\\.nuget\\packages\\acr.userdialogs\\7.2.0.534\\acr.userdialogs.7.2.0.534.nupkg.sha512",
     "C:\\Users\\oleks\\.nuget\\packages\\andhud\\1.4.3\\andhud.1.4.3.nupkg.sha512",

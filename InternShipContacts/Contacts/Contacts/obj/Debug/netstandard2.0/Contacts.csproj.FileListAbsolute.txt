@@ -49,3 +49,4 @@ C:\Users\oleks\OneDrive\Pulpit\InternShipContacts\Contacts\Contacts\obj\Debug\ne
 C:\Users\oleks\OneDrive\Pulpit\InternShipContacts\Contacts\Contacts\obj\Debug\netstandard2.0\ref\Contacts.dll
 C:\Users\oleks\OneDrive\Pulpit\InternShipContacts\Contacts\Contacts\obj\Debug\netstandard2.0\Contacts.pdb
 C:\Users\oleks\OneDrive\Pulpit\InternShipContacts\Contacts\Contacts\obj\Debug\netstandard2.0\Contacts.csproj.AssemblyReference.cache
+D:\XamarinProject\InternShipContacts\Contacts\Contacts\obj\Debug\netstandard2.0\View\SettingPage.xaml.g.cs
