@@ -1986,3 +1986,9 @@ C:\Users\oleks\OneDrive\Pulpit\InternShipContacts\Contacts\Contacts.Android\obj\
 C:\Users\oleks\OneDrive\Pulpit\InternShipContacts\Contacts\Contacts.Android\obj\Debug\110\stamp\_GenerateJavaStubs.stamp
 C:\Users\oleks\OneDrive\Pulpit\InternShipContacts\Contacts\Contacts.Android\obj\Debug\110\stamp\_GeneratePackageManagerJava.stamp
 C:\Users\oleks\OneDrive\Pulpit\InternShipContacts\Contacts\Contacts.Android\obj\Debug\110\stamp\_ResolveLibraryProjectImports.stamp
+D:\XamarinProject\InternShipContacts\Contacts\Contacts.Android\obj\Debug\110\res\drawable\exit.png
+D:\XamarinProject\InternShipContacts\Contacts\Contacts.Android\obj\Debug\110\res\drawable\plusbutton.png
+D:\XamarinProject\InternShipContacts\Contacts\Contacts.Android\obj\Debug\110\res\drawable\arrowleft.png
+D:\XamarinProject\InternShipContacts\Contacts\Contacts.Android\obj\Debug\110\res\drawable\saveb.png
+D:\XamarinProject\InternShipContacts\Contacts\Contacts.Android\obj\Debug\110\res\drawable\user.jpg
+D:\XamarinProject\InternShipContacts\Contacts\Contacts.Android\obj\Debug\110\res\drawable\woman.png

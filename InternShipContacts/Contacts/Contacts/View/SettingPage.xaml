@@ -4,7 +4,8 @@
              x:Class="Contacts.View.SettingPage">
     <ContentPage.Content>
         <StackLayout>
-            <Label Text="Setting Page"
+            <Label Text="Settings Page is comming soon..."
+                   FontSize="Large"
                 VerticalOptions="CenterAndExpand" 
                 HorizontalOptions="CenterAndExpand" />
         </StackLayout>

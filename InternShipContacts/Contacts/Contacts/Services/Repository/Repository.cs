@@ -13,10 +13,10 @@ namespace Contacts.Services.Repository
         private SQLiteAsyncConnection _database;
         public Repository()
         {
-            var path = Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.LocalApplicationData), "Contacts.db");
+            var path = Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.LocalApplicationData), "ContactsNew.db");
             _database = new SQLiteAsyncConnection(path);
-            _database.CreateTableAsync<UserModel>();
             _database.CreateTableAsync<ContactModel>();
+            _database.CreateTableAsync<UserModel>();
         }
 
         public Task<int> DeleteAsync<T>(T entity) where T : IEntityBase, new()

@@ -2043,11 +2043,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\oleks\\OneDrive\\Pulpit\\InternShipContacts\\Contacts\\Contacts.iOS\\Contacts.iOS.csproj",
+      "projectUniqueName": "D:\\XamarinProject\\InternShipContacts\\Contacts\\Contacts.iOS\\Contacts.iOS.csproj",
       "projectName": "Contacts.iOS",
-      "projectPath": "C:\\Users\\oleks\\OneDrive\\Pulpit\\InternShipContacts\\Contacts\\Contacts.iOS\\Contacts.iOS.csproj",
+      "projectPath": "D:\\XamarinProject\\InternShipContacts\\Contacts\\Contacts.iOS\\Contacts.iOS.csproj",
       "packagesPath": "C:\\Users\\oleks\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\oleks\\OneDrive\\Pulpit\\InternShipContacts\\Contacts\\Contacts.iOS\\obj\\",
+      "outputPath": "D:\\XamarinProject\\InternShipContacts\\Contacts\\Contacts.iOS\\obj\\",
       "projectStyle": "PackageReference",
       "skipContentFileWrite": true,
       "fallbackFolders": [
@@ -2068,8 +2068,8 @@
       "frameworks": {
         "xamarinios10": {
           "projectReferences": {
-            "C:\\Users\\oleks\\OneDrive\\Pulpit\\InternShipContacts\\Contacts\\Contacts\\Contacts.csproj": {
-              "projectPath": "C:\\Users\\oleks\\OneDrive\\Pulpit\\InternShipContacts\\Contacts\\Contacts\\Contacts.csproj"
+            "D:\\XamarinProject\\InternShipContacts\\Contacts\\Contacts\\Contacts.csproj": {
+              "projectPath": "D:\\XamarinProject\\InternShipContacts\\Contacts\\Contacts\\Contacts.csproj"
             }
           }
         }

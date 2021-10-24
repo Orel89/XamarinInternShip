@@ -1115,11 +1115,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\oleks\\OneDrive\\Pulpit\\InternShipContacts\\Contacts\\Contacts\\Contacts.csproj",
+      "projectUniqueName": "D:\\XamarinProject\\InternShipContacts\\Contacts\\Contacts\\Contacts.csproj",
       "projectName": "Contacts",
-      "projectPath": "C:\\Users\\oleks\\OneDrive\\Pulpit\\InternShipContacts\\Contacts\\Contacts\\Contacts.csproj",
+      "projectPath": "D:\\XamarinProject\\InternShipContacts\\Contacts\\Contacts\\Contacts.csproj",
       "packagesPath": "C:\\Users\\oleks\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\oleks\\OneDrive\\Pulpit\\InternShipContacts\\Contacts\\Contacts\\obj\\",
+      "outputPath": "D:\\XamarinProject\\InternShipContacts\\Contacts\\Contacts\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\"

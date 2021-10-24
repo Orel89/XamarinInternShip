@@ -110,10 +110,6 @@ namespace Contacts.ViewModel
         {
             if (String.IsNullOrEmpty(Name) || String.IsNullOrEmpty(NickName)) return;
 
-            Console.WriteLine("Name---" + Name);
-            Console.WriteLine("Nickname---" + NickName);
-
-
             if (_id >= 0)
             {
                 Contact = new ContactModel();

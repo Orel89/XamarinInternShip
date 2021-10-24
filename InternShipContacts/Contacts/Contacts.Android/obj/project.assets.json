@@ -3728,11 +3728,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\oleks\\OneDrive\\Pulpit\\InternShipContacts\\Contacts\\Contacts.Android\\Contacts.Android.csproj",
+      "projectUniqueName": "D:\\XamarinProject\\InternShipContacts\\Contacts\\Contacts.Android\\Contacts.Android.csproj",
       "projectName": "Contacts.Android",
-      "projectPath": "C:\\Users\\oleks\\OneDrive\\Pulpit\\InternShipContacts\\Contacts\\Contacts.Android\\Contacts.Android.csproj",
+      "projectPath": "D:\\XamarinProject\\InternShipContacts\\Contacts\\Contacts.Android\\Contacts.Android.csproj",
       "packagesPath": "C:\\Users\\oleks\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\oleks\\OneDrive\\Pulpit\\InternShipContacts\\Contacts\\Contacts.Android\\obj\\",
+      "outputPath": "D:\\XamarinProject\\InternShipContacts\\Contacts\\Contacts.Android\\obj\\",
       "projectStyle": "PackageReference",
       "skipContentFileWrite": true,
       "fallbackFolders": [
@@ -3753,8 +3753,8 @@
       "frameworks": {
         "monoandroid11.0": {
           "projectReferences": {
-            "C:\\Users\\oleks\\OneDrive\\Pulpit\\InternShipContacts\\Contacts\\Contacts\\Contacts.csproj": {
-              "projectPath": "C:\\Users\\oleks\\OneDrive\\Pulpit\\InternShipContacts\\Contacts\\Contacts\\Contacts.csproj"
+            "D:\\XamarinProject\\InternShipContacts\\Contacts\\Contacts\\Contacts.csproj": {
+              "projectPath": "D:\\XamarinProject\\InternShipContacts\\Contacts\\Contacts\\Contacts.csproj"
             }
           }
         }
